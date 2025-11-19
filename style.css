@@ -1,0 +1,53 @@
+/* --- ESTILOS DE DESKTOP E CORES --- */
+body {
+    /* Define uma largura máxima para o conteúdo não esticar demais em telas grandes */
+    max-width: 900px;
+    /* Centraliza o conteúdo */
+    margin: 0 auto; 
+    /* Define uma fonte base */
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    padding: 30px;
+}
+
+h1 {
+    /* Cor do seu título principal */
+    color: #007bff; /* Azul */
+    font-size: 2.2em;
+}
+
+h2 {
+    /* Cor do subtítulo */
+    color: #ff9900; /* Laranja/Âmbar */
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
+}
+
+/* --- REGRAS DE RESPONSIVIDADE (MEDIA QUERIES) --- */
+
+/* Estas regras se aplicam quando a tela tem 600px ou menos (smartphones) */
+@media (max-width: 600px) {
+    
+    /* Ocupa a largura do celular e reduz o padding*/
+    body {
+        max-width: 100%;
+        padding: 10px;
+        /* Garante que o texto base seja fácil de ler */
+        font-size: 100%; 
+    }
+    
+    h1 {
+        font-size: 1.6em; /* Reduz o tamanho do título principal */
+    }
+    
+    h2 {
+        font-size: 1.3em;
+    }
+
+    /* ESSENCIAL: Garante que os blocos de código (shell scripts) não causem barras de rolagem horizontais */
+    pre, code {
+        word-wrap: break-word;
+        white-space: pre-wrap;
+        overflow-x: hidden; /* Oculta qualquer excesso que possa sobrar */
+    }
+}
